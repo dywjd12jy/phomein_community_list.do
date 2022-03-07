@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community_list.do</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="desktop" class="header">
+                <h1 class="logo"><img src="img/logo.png" alt="header_logo"></h1>
+                <nav>
+                    <ul class="nav">
+                        <div class="navbar"></div>
+                        <li><p>COMPANY</p>
+                            <ul class="nav_menu">
+                                <li>(주)데일리킹</li>
+                                <li>PHO SEASON INC.</li>
+                                <li>CEO 인사말</li>
+                                <li>현대그린푸드 MOU</li>
+                                <li>사회공헌활동</li>
+                            </ul>
+                        </li>
+                        <li><p>BRAND</p>
+                            <ul class="nav_menu">
+                                <li>포메인</li>
+                                <li>포메인 레드</li>
+                            </ul>
+                        </li>
+                        <li><p>MENU</p>
+                            <ul class="nav_menu">
+                                <li>메뉴</li>
+                                <li>국내유일 햅쌀면</li>
+                                <li>포메인 전용상품</li>
+                            </ul>
+                        </li>
+                        <li><p>STORE</p>
+                            <ul class="nav_menu">
+                                <li>매장찾기</li>
+                                <li>딜리버리 서비스</li>
+                            </ul>
+                        </li>
+                        <li><p>FRANCHISE</p>
+                            <ul class="nav_menu">
+                                <li>가맹 안내</li>
+                                <li>가맹 상담 신청</li>
+                                <li>교육시스템</li>
+                            </ul>
+                        </li>
+                        <li><p>COMMUNITY</p>
+                            <ul class="nav_menu">
+                                <li>인스타그램</li>
+                                <li>블로그</li>
+                                <li>유튜브</li>
+                                <li>공지 & 언론보도</li>
+                                <li>상품권</li>
+                                <li>멤버십</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <article>
+                    <ul>
+                        <li>가맹문의</li>
+                        <li>
+                            <input type="text" placeholder="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>KOREAN</li>
+                        <li>ㅣ</li>
+                        <li>ENGLISH</li>
+                    </ul>
+                </article>
+            </div>
+            <!-- <div id="mobile" class="header">
+                <div class="head_bar">
+                    <h1 class="logo"><img src="img/logo.png" alt="header_logo"></h1>
+                    <ul>
+                        <li class="hd_r">
+                            <a>가맹문의</a>
+                            <p>
+                                <span>KOREAN</span>
+                                <span>ㅣ</span>
+                                <span>ENGLISH</span>
+                            </p>
+                        </li>
+                        <li class="ham">
+                            <p>
+                                <span class="h_bar1"></span>
+                                <span class="h_bar2"></span>
+                                <span class="h_bar3"></span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <nav id="nav">
+                    <ul class="input">
+                        <li>
+                            <input type="text" placeholder="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><p>COMPANY</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">(주)데일리킹</a></li>
+                                <li><a href="#">PHO SEASON INC.</a></li>
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">현대그린푸드 MOU</a></li>
+                                <li><a href="#">사회공헌활동</a></li>
+                            </ul>
+                        </li>
+                        <li><p>BRAND</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">포메인</a></li>
+                                <li><a href="#">포메인 레드</a></li>
+                            </ul>
+                        </li>
+                        <li><p>MENU</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">메뉴</a></li>
+                                <li><a href="#">국내유일 햅쌀면</a></li>
+                                <li><a href="#">포메인 전용상품</a></li>
+                            </ul>
+                        </li>
+                        <li><p>STORE</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">딜리버리 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li><p>FRANCHISE</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">가맹 안내</a></li>
+                                <li><a href="#">가맹 상담 신청</a></li>
+                                <li><a href="#">교육시스템</a></li>
+                            </ul>
+                        </li>
+                        <li><p>COMMUNITY</p>
+                            <ul class="nav_menu">
+                                <li><a href="#">인스타그램</a></li>
+                                <li><a href="#">블로그</a></li>
+                                <li><a href="#">유튜브</a></li>
+                                <li><a href="#">공지 & 언론보도</a></li>
+                                <li><a href="#">상품권</a></li>
+                                <li><a href="#">멤버십</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    </header>
+    <section class="backgrond">
+        <img src="img/community_list_top_back.jpeg" alt="백그라운드 이미지">
+    </section>
+    <section class="page_title">
+        <h2>공지 & 언론보도</h2>
+    </section>
+    <section class="page_body">
+        <article class="location_menu">
+            <ul class="container">
+                <li class="home_icon">
+                    <a href="#">
+                        <img src="img/btn_home_lcon.png" alt="home 버튼 icon">
+                    </a>
+                </li>
+                <li>
+                    <select name="select_1">
+                        <option value="COMMUNITY">COMMUNITY</option>
+                        <option value="COMPANY">COMPANY</option>
+                        <option value="BRAND">BRAND</option>
+                        <option value="MENU">MENU</option>
+                        <option value="STORE">STORE</option>
+                        <option value="FRANCHISE">FRANCHISE</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="select_2">
+                        <option value="news">공지 & 언론보도</option>
+                        <option value="instar">인스타그램</option>
+                        <option value="blog">블로그</option>
+                        <option value="youtube">유튜브</option>
+                        <option value="cupone">상품권</option>
+                        <option value="membership">멤버십</option>
+                    </select>
+                </li>
+            </ul>
+        </article>
+        <article class="page_main">
+            <div class="container">
+                <ul class="tab_btn">
+                    <li>전체</li>
+                    <li>공지</li>
+                    <li>언론보도</li>
+                </ul>
+                <div class="tab_input">
+                    <div>
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <button>
+                            <img src="/img/btn_search.png" alt="input 검색 아이콘">
+                        </button>
+                    </div>
+                </div>
+                <div class="tab_menu">
+                    <ul>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>언론보도</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">포메인 ‘햅쌀면’, 해썹‧ISO 22000 인증 완료…”쌀국수 업계 최초”</a>
+                                <p>포메인 ‘햅쌀면’, 해썹‧ISO 22000 인증 완료…”쌀국수 업계 최초”</p>
+                                <span>2022.01.10</span>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>공지</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">포메인 본사 (주)데일리킹 2021 RECRUIT 공개채용</a>
+                                <p>모집 부문 - 슈퍼바이저(신입/경력)</p>
+                                <span>2021.11.04</span>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>언론보도</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">포메인, 비대면 명절선물 '외식 모바일 상품권' 판매</a>
+                                <p>포메인, 비대면 명절선물 '외식 모바일 상품권' 판매</p>
+                                <span>2021.09.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>언론보도</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">포메인, 오리지널의 재해석… 창립 15주년 신메뉴 ‘레드 포’ 출시 • SNS 이벤트 진행</a>
+                                <p>포메인, 오리지널의 재해석… 창립 15주년 신메뉴 ‘레드 포’ 출시 • SNS 이벤트 진행</p>
+                                <span>2021.05.31</span>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>언론보도</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">지금은 비대면 시대, '포메인' 카카오톡 선물하기 인기</a>
+                                <p>지금은 비대면 시대, '포메인' 카카오톡 선물하기 인기</p>
+                                <span>2021.05.26</span>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="menu_img">
+                                <li class="back_img"></li>
+                                <li class="menu_img_icon">
+                                    <span><img src="/img/icon_bell.png" alt="벨 아이콘"></span>
+                                    <span>언론보도</span>
+                                </li>
+                            </ul>
+                            <div class="menu_text">
+                                <a href="#">K-베트남 쌀국수의 강자 ‘포메인’, 맛과 품질 월등… 이유있는 호평</a>
+                                <p>K-베트남 쌀국수의 강자 ‘포메인’, 맛과 품질 월등… 이유있는 호평</p>
+                                <span>2021.05.03</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+    <footer class="section section8 fp-auto-height">
+        <div class="ft_tp_bar"></div>
+        <div class="container">
+            <div class="foot_tp">
+                <ul>
+                    <li>이용약관</li>
+                    <li class="color">개인정보 취급방침</li>
+                    <li>이메일 무단 수집 거부</li>
+                    <li>(주)데일리킹</li>
+                    <li>고객의 소리</li>
+                </ul>
+                <ul>
+                    <li>마일리지 조회</li>
+                    <li>마일리지 통합</li>
+                    <li>상품권 구매</li>
+                    <li>인트라넷</li>
+                </ul>
+            </div>
+            <div class="foot_bt">
+                <div class="ft_bt_left">
+                    <h2><img src="img/footer_portpolio_logo.png" alt="phomein로고 대신 포트폴리오 로고"></h2>
+                    <ul>
+                        <li><p>상호 : 주식회사 포트폴리오</p><p>주소 : 경기도 가나시 다라구 마바사로 ***** 111호 (포트폴리오)</p></li>
+                        <li><p>대표전화 : 1899-****</p><p>사업자등록번호 : 111-11-11111</p></li>
+                    </ul>
+                    <p>ⓒ 2021 PORTPOLIO .ALL ***** RESERVED.</p>
+                </div>
+                <div class="ft_bt_right">
+                    <h3><img src="img/footer_relief.png" alt="Relife_img"></h3>
+                    <ul class="icon">
+                        <li><a href="#"><img src="img/foot_icon_y.png" alt="footer 유튜브 아이콘"></a></li>
+                        <li><a href="#"><img src="img/foot_icon_i.png" alt="footer 인스타그램 아이콘"></a></li>
+                        <li><a href="#"><img src="img/foot_icon_b.png" alt="footer 밴드 아이콘"></a></li>
+                        <li><a href="#"><img src="img/foot_icon_kakaogift.png" alt="footer 카카오톡_선물하기 아이콘"></a></li>
+                    </ul>
+                </div>
+                <ul></ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
