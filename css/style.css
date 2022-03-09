@@ -260,6 +260,78 @@ header .header article:last-of-type ul li:nth-of-type(2) {
   cursor: default;
 }
 
+.quick_menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+  padding: 5px;
+  width: 80px;
+}
+
+.quick_menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quick_menu ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quick_menu ul li span {
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.quick_menu ul .quick_top {
+  width: 100%;
+  height: 150px;
+  background-color: #4d750d;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.quick_menu ul .quick_top span {
+  margin: 5px 0;
+}
+
+.quick_menu ul .quick_top span:first-of-type {
+  width: 42px;
+}
+
 .backgrond {
   position: fixed;
   z-index: -1;
@@ -294,6 +366,10 @@ header .header article:last-of-type ul li:nth-of-type(2) {
 
 .page_body {
   background-color: #fff;
+}
+
+.page_body .page_main {
+  padding-bottom: 50px;
 }
 
 .page_body .container {
