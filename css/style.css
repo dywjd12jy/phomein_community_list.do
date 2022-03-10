@@ -313,9 +313,6 @@ header .header article:last-of-type ul li:nth-of-type(2) {
   padding: 8px 20px;
   font-size: 15px;
 }
-.page_body .location_menu .container > ul > li:nth-of-type(2) {
-  border-left: solid 1px #dedede;
-}
 .page_body .location_menu .container > ul .home_icon {
   position: absolute;
   flex-direction: row;
@@ -325,10 +322,11 @@ header .header article:last-of-type ul li:nth-of-type(2) {
   border-left: solid 1px #dedede;
   border-right: none;
 }
+.page_body .location_menu .container > ul .location_sub_menu:first-of-type a p {
+  border-left: none;
+}
 .page_body .location_menu .container > ul .location_sub_menu {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
   top: 0%;
-  border: solid 1px #000;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -344,13 +342,20 @@ header .header article:last-of-type ul li:nth-of-type(2) {
   padding: 20px;
   background-color: #fff;
   width: 100%;
-  display: flex;
   flex-direction: column;
   top: 100%;
+  display: none;
   box-sizing: border-box;
 }
 .page_body .location_menu .container > ul .location_sub_menu ul .color {
   color: #000;
+}
+.page_body .location_menu .container > ul .location_sub_menu .active .location_sub_menu {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
+  border: solid 1px #000;
+}
+.page_body .location_menu .container > ul .location_sub_menu .active .location_sub_menu ul {
+  display: flex;
 }
 .page_body .location_menu .container > ul .location_sub_menu a {
   display: flex;
@@ -363,8 +368,6 @@ header .header article:last-of-type ul li:nth-of-type(2) {
 .page_body .location_menu .container > ul .location_sub_menu > a {
   width: 100%;
   height: 60px;
-  padding: 0 20px;
-  border-right: solid 1px #dedede;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -372,6 +375,9 @@ header .header article:last-of-type ul li:nth-of-type(2) {
 }
 .page_body .location_menu .container > ul .location_sub_menu > a p {
   display: flex;
+  padding: 0 20px;
+  border-right: solid 1px #dedede;
+  border-left: solid 1px #dedede;
   align-items: center;
   justify-content: space-between;
   width: 100%;
