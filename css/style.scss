@@ -7,8 +7,8 @@ html{
   width: 100%;
   margin: 0 auto;
 }
-// ##desktop.nav에 hover slide 효과
-#desktop.header:hover{
+// #desk_nav.nav에 hover slide 효과
+#desk_nav:hover{
   background-color: rgba(0,0,0,0.9);
   .navbar{
     height: 260%;
@@ -22,6 +22,7 @@ html{
   }
 }
 
+// header
 header{
   position: fixed;
   z-index: 10;
@@ -192,48 +193,82 @@ header{
     }
   }
 }
-.quick_menu{
-  position: fixed;
-  right: 0;
-  top: 50%;
+
+
+// flex css 지정 (quick_menu 에서만 사용함)
+.flex_cen_cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_column{
   display: flex;
   flex-direction: column;
-  opacity: 1;
-  padding: 5px;
+}
+.flex_col_cen_cen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// quick_menu
+.quick_menu{
+  position: fixed;
   width: 80px;
+  padding: 5px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 20;
   ul{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
     li{
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background-color: #222;
+      &:last-of-type{
+        a{
+          font-size: 13px;
+          height: 80px;
+        }
+      }
       span{
         width: 100%;
         text-align: center;
         color: rgba(255,255,255,0.8);
+        font-size: 13px;
       }
     }
-    .quick_top{
+    .quick_icon{
       width: 100%;
       height: 150px;
       background-color: #4d750d;
-      font-size: 13px;
       line-height: 19px;
       span{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 5px 0;
+        &:first-of-type{
+          width: 42px;
+        }
       }
-      span:first-of-type{
-        width: 42px;
-      }
+    }
+    &:last-of-type{
+      width: 100%;
+      height: 80px;
+      border: solid 1px rgba(107, 107, 107, 0.4);
+      background-color: #fffdfd;
     }
   }
 }
+
+
+// backgrond
 .backgrond{
   position: fixed;
   z-index: -1;
@@ -244,6 +279,8 @@ header{
     height: 100%;
   }
 }
+
+// page_title
 .page_title{
   width: 100vw;
   height: 70vh;
@@ -256,6 +293,9 @@ header{
     font-weight: 500;
   }
 }
+
+
+// page_body
 .page_body{
   background-color: #fff;
 
@@ -472,7 +512,7 @@ header{
 }
 
 
-
+// footer
 footer{
   display: flex;
   flex-direction: column;
@@ -483,11 +523,12 @@ footer{
       top: 0;
       left: 0;
       width: 100%;
+      height: 70rem;
       border-bottom: solid 1px rgba(255,255,255,0.1);
   }
   .container{
       position: relative;
-      max-width: 1200px;
+      max-width: 1200rem;
       width: 100%;
       height: 100%;
       display: flex;
@@ -497,38 +538,42 @@ footer{
   }
   .foot_tp{
       width: 95%;
+      height: 70rem;
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
       ul{
           display: flex;
-          li{
-            opacity: 0.5;
-            color: #e1e1e1;
-            font-size: 16rem;
-          }
-          .color{
-            opacity: 1;
-          }
-
           &:first-of-type{
-              li{
-                padding-right: 25rem;
-              }
+            width: 50%;
+            li{
+              padding-right: 15rem;
+            }
           }
           &:nth-of-type(2){
+            width: 50%;
             li{
               opacity: 1;
-            }
-              li::after{
+              &::after{
                   content: "•";
                   color: #546220;
                   padding: 0 10rem;
               }
-              li:last-child{
+              &:last-child{
                   color: #4F5B22;
               }
-              li:last-child::after{
+              &:last-child::after{
                   content: none;
               }
+            }
+          }
+          li{
+            opacity: 0.5;
+            color: #e1e1e1;
+            font-size: 15rem;
+          }
+          .color{
+            opacity: 1;
           }
       }
   }
@@ -593,35 +638,6 @@ footer{
           }
       }
   }
-
 }
 
-footer{
-  .ft_tp_bar{
-    height: 70rem;
-  }
-  .container{
-    max-width: 1200rem;
-  }
-  .foot_tp{
-    height: 70rem;
-    justify-content: flex-start;
-    align-items: center;
-    ul{
-      display: flex;
-      &:first-of-type{
-        width: 50%;
-        li{
-          padding-right: 15rem;
-        }
-      }
-      &:nth-of-type(2){
-        width: 50%;
-      }
-      li{
-        font-size: 15rem;
-      }
-    }
-  }
-}
 
