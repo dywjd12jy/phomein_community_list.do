@@ -325,6 +325,13 @@ header .header article:last-of-type ul li:nth-of-type(2) {
 .page_body .location_menu .container > ul .location_sub_menu:first-of-type a p {
   border-left: none;
 }
+.page_body .location_menu .container > ul .location_sub_menu.active {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
+  border: solid 1px #000;
+}
+.page_body .location_menu .container > ul .location_sub_menu.active ul {
+  display: flex;
+}
 .page_body .location_menu .container > ul .location_sub_menu {
   top: 0%;
   box-sizing: border-box;
@@ -349,13 +356,6 @@ header .header article:last-of-type ul li:nth-of-type(2) {
 }
 .page_body .location_menu .container > ul .location_sub_menu ul .color {
   color: #000;
-}
-.page_body .location_menu .container > ul .location_sub_menu .active .location_sub_menu {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
-  border: solid 1px #000;
-}
-.page_body .location_menu .container > ul .location_sub_menu .active .location_sub_menu ul {
-  display: flex;
 }
 .page_body .location_menu .container > ul .location_sub_menu a {
   display: flex;

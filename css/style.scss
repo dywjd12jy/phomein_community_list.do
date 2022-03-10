@@ -347,7 +347,14 @@ header{
         }
       }
 
-
+      .location_sub_menu.active{
+        box-shadow: 0px 0px 6px rgb(0 0 0 / 24%);
+        border: solid 1px #000;
+        ul{
+          display: flex;
+        }
+      }
+      
       .location_sub_menu{
         top: 0%;
         box-sizing: border-box;
@@ -369,15 +376,6 @@ header{
           .color{color: #000;}
         }
         
-        .active{
-          .location_sub_menu{
-            box-shadow: 0px 0px 6px rgb(0 0 0 / 24%);
-            border: solid 1px #000;
-            ul{
-              display: flex;
-            }
-          }
-        }
         a{
           display: flex;
           align-items: center;
