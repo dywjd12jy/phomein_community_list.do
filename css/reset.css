@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+/*초기 폰트사이즈, 컨테이너*/
+html{
+    font-size: 6.25%;
+  }
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 /* 여백 초기화 */
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
 

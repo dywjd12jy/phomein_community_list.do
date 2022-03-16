@@ -1,0 +1,126 @@
+@charset "UTF-8";
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #e1e1e1;
+  background-color: #222;
+}
+footer .ft_tp_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70rem;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+footer .container {
+  position: relative;
+  max-width: 1200rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_tp {
+  width: 95%;
+  height: 70rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .foot_tp ul {
+  display: flex;
+}
+footer .foot_tp ul:first-of-type {
+  width: 50%;
+}
+footer .foot_tp ul:first-of-type li {
+  padding-right: 15rem;
+}
+footer .foot_tp ul:nth-of-type(2) {
+  width: 50%;
+}
+footer .foot_tp ul:nth-of-type(2) li {
+  opacity: 1;
+}
+footer .foot_tp ul:nth-of-type(2) li::after {
+  content: "•";
+  color: #546220;
+  padding: 0 10rem;
+}
+footer .foot_tp ul:nth-of-type(2) li:last-child {
+  color: #4F5B22;
+}
+footer .foot_tp ul:nth-of-type(2) li:last-child::after {
+  content: none;
+}
+footer .foot_tp ul li {
+  opacity: 0.5;
+  color: #e1e1e1;
+  font-size: 15rem;
+}
+footer .foot_tp ul .color {
+  opacity: 1;
+}
+footer .foot_bt {
+  padding: 40rem 0 70rem 0rem;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot_bt .ft_bt_left {
+  width: 70%;
+}
+footer .foot_bt .ft_bt_left p {
+  color: #fff;
+  opacity: 0.5;
+}
+footer .foot_bt .ft_bt_left h2 {
+  width: 20%;
+  margin-bottom: 15rem;
+}
+footer .foot_bt .ft_bt_left ul li {
+  display: flex;
+}
+footer .foot_bt .ft_bt_left ul li p {
+  font-size: 14rem;
+}
+footer .foot_bt .ft_bt_left ul li p:first-of-type::after {
+  content: "ㅣ";
+  padding: 0 10rem;
+}
+footer .foot_bt .ft_bt_left > p {
+  padding-top: 20rem;
+  opacity: 0.2;
+}
+footer .foot_bt .ft_bt_right {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot_bt .ft_bt_right h3 {
+  width: 30%;
+  margin-right: 10rem;
+}
+footer .foot_bt .ft_bt_right .icon {
+  margin-right: 30rem;
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .foot_bt .ft_bt_right .icon li {
+  margin-left: 20rem;
+}
+footer .foot_bt .ft_bt_right .icon li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 100%;
+}
+footer .foot_bt .ft_bt_right .icon li a img {
+  width: 90%;
+}/*# sourceMappingURL=footer.css.map */
