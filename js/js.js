@@ -1,4 +1,6 @@
 
+// let location = document.querySelector(".location_sub_menu");
+// let active = document.querySelector(".active");
 // const logo = document.getElementById("logo_span");
 // let clicked = 0;
 // logo.onclick = function(){
