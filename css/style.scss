@@ -272,7 +272,7 @@ header{
 .backgrond{
   position: fixed;
   z-index: -1;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   img{
     width: 100%;
@@ -351,27 +351,35 @@ header{
         box-shadow: 0px 0px 6px rgb(0 0 0 / 24%);
         border: solid 1px #000;
         ul{
+          visibility: visible;
+          height: 100%;
+          transform: scaleY(1);
           display: flex;
         }
       }
       
       .location_sub_menu{
-        top: 0%;
-        box-sizing: border-box;
+        transition: all ease-out 0.4s;
         display: flex;
         justify-content: center;
+        top: 0%;
+        box-sizing: border-box;
         padding: 0;
         &:hover{
           &>a p{color:#444;}
           a p::after{opacity: 1;}
         }
         ul{
+          visibility: hidden;
+          transition: all ease-out 0.4s;
           padding: 20px;
+          height: 0vh;
+          transform: scaleY(0);
+          transform-origin: 0px 0px;
           background-color: #fff;
-          width: 100%;
+          width: 99.7%;
           flex-direction: column;
           top: 100%;
-          display: none;
           box-sizing: border-box;
           .color{color: #000;}
         }
@@ -395,8 +403,8 @@ header{
           p{
             display: flex;
             padding: 0 20px;
-            border-right : solid 1px #dedede;
-            border-left: solid 1px #dedede;
+            border-right : solid 0.5px #dedede;
+            border-left: solid 0.5px #dedede;
             align-items: center;
             justify-content: space-between;
             width: 100%;
@@ -421,9 +429,14 @@ header{
         }
         //== a 태그 after 가상요소 end ==
       }
+      //border 겹침 지우기
+      .submenu_2 a p{
+        border-left: none;
+      }
     }
   }
   .page_main{
+    position: relative;
     .tab_btn{
       display: flex;
       justify-content: center;
@@ -465,6 +478,13 @@ header{
     }
     .tab_menu{
 
+      padding-bottom: 150px;
+      .more_click{
+        display: none;
+        &.active{
+          display: flex;
+        }
+      }
       &>ul{
         display: flex;
         justify-content: space-between;
@@ -565,12 +585,29 @@ header{
           line-height: 28px;
           margin-bottom: 10px;
         }
-        p{font-size: 15px;
+        p{
+          font-size: 15px;
           height: 50px;
         }
         span{font-size: 13px; color: #666;}
       }
 
+    }
+    .more_btn{
+      position: absolute;
+      bottom: 80px;
+      right: 50%;
+      transform: translateX(50%);
+      button{
+        color: #666;
+        border: solid 1px #c8c8c8;
+        border-radius: 1px;
+        background-color: #fff;
+        width: 250px;
+        padding: 10px 0px;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 }
